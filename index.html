@@ -288,6 +288,7 @@ body.sound-off .spk{opacity:.3;pointer-events:none}
 /* Hesper mascot poses on different screens (upload images to assets/characters/) */
 .hesper-pose{display:block;margin:2px auto 8px;width:clamp(112px,34vw,156px);height:auto;filter:drop-shadow(0 12px 18px rgba(30,41,82,.18));animation:coach-idle 4.5s ease-in-out infinite}
 .hesper-sm{width:clamp(76px,22vw,104px);margin:0 auto 4px}
+.hesper-lg{width:clamp(152px,44vw,200px);margin:0 auto 6px}
 @media (prefers-reduced-motion:reduce){.hesper-pose{animation:none}}
 .bubble{position:relative;background:#fff;border:2px solid var(--line);border-radius:16px;padding:14px 16px;flex:1;min-width:0;box-shadow:var(--sh-sm);margin-top:10px}
 .bubble::before{content:"";position:absolute;left:-9px;top:20px;width:14px;height:14px;background:#fff;border-left:2px solid var(--line);border-bottom:2px solid var(--line);transform:rotate(45deg)}
@@ -329,7 +330,9 @@ body.sound-off .spk{opacity:.3;pointer-events:none}
 #feedback{position:fixed;left:0;right:0;bottom:0;z-index:80;transform:translateY(110%);transition:transform .35s cubic-bezier(.2,.9,.3,1)}
 #feedback.show{transform:none}
 #feedback .fb-inner{max-width:470px;margin:0 auto;position:relative;padding:16px 18px calc(18px + env(safe-area-inset-bottom));border-top:1px solid;border-radius:22px 22px 0 0;box-shadow:0 -8px 30px rgba(27,36,51,.18)}
-.fbhesper{position:absolute;right:16px;top:-58px;width:clamp(62px,17vw,84px);height:auto;filter:drop-shadow(0 8px 14px rgba(30,41,82,.22));pointer-events:none;z-index:1;animation:fbHesperPop .34s cubic-bezier(.22,1,.36,1)}
+.fbhesper{position:absolute;right:6px;top:-82px;width:clamp(108px,30vw,144px);height:auto;filter:drop-shadow(0 10px 16px rgba(30,41,82,.24));pointer-events:none;z-index:2;animation:fbHesperPop .34s cubic-bezier(.22,1,.36,1)}
+/* only show the feedback mascot while the panel is open (it overflows the panel, so hide it when the bar is tucked away) */
+#feedback:not(.show) .fbhesper{display:none}
 @keyframes fbHesperPop{from{opacity:0;transform:translateY(10px) scale(.9)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.fbhesper{animation:none}}
 #feedback.ok .fb-inner{background:#E6F4EE;border-color:#C2E2D4}
@@ -379,7 +382,7 @@ body.sound-off .spk{opacity:.3;pointer-events:none}
 
 /* ---------- result / reward ---------- */
 .result{padding-top:34px;text-align:center;display:flex;flex-direction:column;align-items:center}
-.medal{font-size:74px;line-height:1;animation:pop .6s cubic-bezier(.2,.7,.3,1) both;background:none;width:auto;height:auto;box-shadow:none}
+.medal{font-size:44px;line-height:1;animation:pop .6s cubic-bezier(.2,.7,.3,1) both;background:none;width:auto;height:auto;box-shadow:none}
 .result h2{font-size:26px;color:var(--brand-dd);margin-top:10px;margin-bottom:4px}
 .result .sub{color:var(--muted);font-weight:700;font-size:14px;margin-bottom:18px}
 .rstats{width:100%;display:flex;flex-direction:column;gap:10px;margin-bottom:22px}
@@ -663,7 +666,7 @@ body.sound-off .spk{opacity:.3;pointer-events:none}
 @keyframes repPop{ from{opacity:0; transform:translateY(14px) scale(.98)} to{opacity:1; transform:none} }
 .rep-x{ position:absolute; top:13px; right:13px; width:34px; height:34px; border-radius:50%; border:none;
   background:var(--canvas); color:var(--muted); font-size:14px; cursor:pointer; line-height:1; }
-.rep-burst{ font-size:46px; text-align:center; line-height:1; margin:2px 0 6px; animation:repBurst .55s cubic-bezier(.22,1,.36,1); }
+.rep-burst{ font-size:30px; text-align:center; line-height:1; margin:0 0 4px; animation:repBurst .55s cubic-bezier(.22,1,.36,1); }
 @keyframes repBurst{ 0%{transform:scale(.4); opacity:0} 60%{transform:scale(1.15)} 100%{transform:scale(1); opacity:1} }
 .rep-title{ text-align:center; font-size:21px; line-height:1.32; margin:0 0 4px; color:var(--ink); letter-spacing:-.01em; }
 .rep-sub{ text-align:center; font-size:12.5px; color:var(--muted); margin-bottom:14px; font-weight:700; }
@@ -807,7 +810,7 @@ body.sound-off .spk{opacity:.3;pointer-events:none}
  <div id="scr-result" class="result hidden">
   <div class="medal" id="medal">🎉</div>
   <!-- Hesper: result page (hesper_5.png) -->
-  <img class="hesper-pose hesper-sm" src="assets/characters/hesper_5.png" alt="Hesper" loading="lazy" decoding="async" onerror="this.onerror=null;this.style.display='none'">
+  <img class="hesper-pose hesper-lg" src="assets/characters/hesper_5.png" alt="Hesper" loading="lazy" decoding="async" onerror="this.onerror=null;this.style.display='none'">
   <h2 id="restitle"></h2>
   <p class="sub" id="ressub"></p>
   <div class="rstats">
@@ -5689,7 +5692,7 @@ function startLesson(mi,li){
   const learned = (d.recap||[]).map(p=>`<div class="rep-learn"><span>${esc(p.ic||"⭐")}</span><span>${esc(tri(p))}</span></div>`).join("");
   const html = `<div class="rep-card">
     <button class="rep-x" id="repx" aria-label="close">✕</button>
-    <img class="hesper-pose hesper-sm" src="${HESPER.result}" alt="Hesper" loading="lazy" decoding="async" onerror="this.onerror=null;this.style.display='none'" style="margin-top:2px">
+    <img class="hesper-pose hesper-lg" src="${HESPER.result}" alt="Hesper" loading="lazy" decoding="async" onerror="this.onerror=null;this.style.display='none'" style="margin-top:2px">
     <div class="rep-burst">🎉</div>
     <h2 class="rep-title">${esc(cheer)}</h2>
     <div class="rep-sub">${esc(d.setTitle||"")} · ${esc(d.lessonTitle||"")}</div>

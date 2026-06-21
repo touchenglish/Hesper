@@ -332,7 +332,7 @@ body.sound-off .spk{opacity:.3;pointer-events:none}
 #feedback .fb-inner{max-width:470px;margin:0 auto;position:relative;padding:16px 18px calc(18px + env(safe-area-inset-bottom));border-top:1px solid;border-radius:22px 22px 0 0;box-shadow:0 -8px 30px rgba(27,36,51,.18)}
 .fbhesper{position:absolute;right:6px;top:-82px;width:clamp(108px,30vw,144px);height:auto;filter:drop-shadow(0 10px 16px rgba(30,41,82,.24));pointer-events:none;z-index:2;animation:fbHesperPop .34s cubic-bezier(.22,1,.36,1)}
 .fbhesper img{width:100%;height:auto;display:block}
-.fbhesper svg{width:100%!important;height:100%!important;display:block}
+.fbhesper svg{width:100%!important;height:auto!important;display:block}
 /* only show the feedback mascot while the panel is open (it overflows the panel, so hide it when the bar is tucked away) */
 #feedback:not(.show) .fbhesper{display:none}
 /* per-chapter footer */
@@ -6019,24 +6019,33 @@ function ensureLottie(){
  });
  return _lottieReady;
 }
+function _hesperImg(box, src, hideOnFail){
+ box.innerHTML="";
+ const img=document.createElement("img");
+ img.alt="Hesper"; img.loading="lazy"; img.decoding="async";
+ img.onerror=function(){ if(hideOnFail) box.style.display="none"; };
+ img.src=src; box.appendChild(img);
+}
 function setFeedbackHesper(src){
  const box=$("fbhesper"); if(!box) return;
  if(_fbAnim){ try{_fbAnim.destroy();}catch(e){} _fbAnim=null; }
  box.innerHTML=""; box.style.display=""; box.style.aspectRatio="";
- if(/\.json($|\?)/i.test(src)){
-  box.style.aspectRatio="3 / 4";                 /* avoid collapse before the animation reports its size */
+ const pngFallback = src.replace(/\.json(\?.*)?$/i, ".png");
+ const fallback = (why)=>{ if(why) console.error("[Hesper] "+why+" \u2014 falling back to PNG: "+pngFallback); _hesperImg(box, pngFallback, true); };
+ if(/\.json(\?.*)?$/i.test(src)){
   ensureLottie().then(lottie=>{
+   if(!lottie || !lottie.loadAnimation){ fallback("lottie-web not available"); return; }
    try{
-    _fbAnim = lottie.loadAnimation({container:box, renderer:"svg", loop:true, autoplay:true, path:src});
-    _fbAnim.addEventListener("DOMLoaded", ()=>{ try{ const ad=_fbAnim.animationData; if(ad&&ad.w&&ad.h) box.style.aspectRatio=ad.w+" / "+ad.h; }catch(e){} });
-    _fbAnim.addEventListener("data_failed", ()=>{ box.style.display="none"; });
-   }catch(e){ box.style.display="none"; }
-  }).catch(()=>{ box.style.display="none"; });
+    _fbAnim = lottie.loadAnimation({ container:box, renderer:"svg", loop:true, autoplay:true, path:src });
+    _fbAnim.addEventListener("DOMLoaded", ()=>{          /* size the SVG from its own viewBox so the box never collapses */
+     const svg = box.querySelector("svg");
+     if(svg){ svg.removeAttribute("width"); svg.removeAttribute("height"); svg.style.width="100%"; svg.style.height="auto"; svg.style.display="block"; }
+    });
+    _fbAnim.addEventListener("data_failed", ()=>{ try{_fbAnim.destroy();}catch(e){} _fbAnim=null; fallback("Lottie JSON failed to load ("+src+")"); });
+   }catch(e){ console.error("[Hesper] Lottie loadAnimation error:", e); fallback(); }
+  }).catch(err=>{ console.error("[Hesper] lottie-web CDN failed to load:", err); fallback(); });
  } else {
-  const img=document.createElement("img");
-  img.alt="Hesper"; img.loading="lazy"; img.decoding="async";
-  img.onerror=function(){ box.style.display="none"; };
-  img.src=src; box.appendChild(img);
+  _hesperImg(box, src, true);
  }
 }
 function showFeedback(ok, opts){

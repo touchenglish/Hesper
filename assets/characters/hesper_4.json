@@ -1,50 +1,121 @@
 {
-  "asset_name": "girl_sitting_crying_wrong_answer",
-  "type": "character_expression",
-  "source_image": "F2F44360-31B6-43C8-BCF9-332B86CE7E12.jpeg",
-  "image_size": {
+  "asset_name": "wrong_answer_crying_dynamic",
+  "type": "character_animation_spec",
+  "version": "1.0",
+  "source_image": {
+    "file_name": "C0D8FC0A-29F1-448F-878F-1670DAFC33C1.jpeg",
     "width": 953,
     "height": 1036
   },
-  "character": {
-    "style": "3D cartoon / cute chibi style",
-    "gender": "girl",
-    "hair": "brown hair with bangs and braided bun style",
-    "eyes": "closed tightly while crying",
-    "outfit": {
-      "top": "off-white sleeveless textured top",
-      "skirt": "pastel pink pleated skirt",
-      "socks": "beige socks",
-      "shoes": "cream sneakers with pink details",
-      "accessory": "red bracelet on right wrist"
+  "character_consistency": {
+    "keep_same_character": true,
+    "style": "cute 3D cartoon sticker style",
+    "description": "Same young 3D cartoon girl with brown bangs and tied hair, off-white sleeveless top, pastel pink skirt, beige socks, cream sneakers with pink details, and red bracelet on the right wrist."
+  },
+  "animation": {
+    "name": "坐地崩溃大哭",
+    "emotion": "wrong answer / dramatic crying reaction",
+    "duration_seconds": 2.0,
+    "fps": 24,
+    "loop": false,
+    "background": "transparent",
+    "canvas": {
+      "width": 1024,
+      "height": 1024
+    },
+    "action_summary_cn": "坐地 → 身体往后一震 → 双手握拳 → 张嘴大哭 → 眼泪喷出来 / 掉下来 → 头轻轻左右摇",
+    "keyframes": [
+      {
+        "time": "0.00s",
+        "pose": "Character sits on the floor in a W-sitting pose, fists already near the body, face about to cry.",
+        "motion": "Hold for a very short anticipation pause.",
+        "expression": "Eyes squeezed, eyebrows lifted sadly, mouth starting to open.",
+        "effects": []
+      },
+      {
+        "time": "0.20s",
+        "pose": "Upper body suddenly leans backward slightly.",
+        "motion": "Quick backward shock movement with a small squash-and-stretch bounce.",
+        "expression": "Brows curve higher, mouth opens wider.",
+        "effects": [
+          "small impact bounce"
+        ]
+      },
+      {
+        "time": "0.45s",
+        "pose": "Both fists clench tighter and lift upward beside the body.",
+        "motion": "Arms move upward with exaggerated cartoon timing.",
+        "expression": "Eyes tightly shut, cheeks flushed, mouth fully open.",
+        "effects": [
+          "tiny motion lines near fists"
+        ]
+      },
+      {
+        "time": "0.75s",
+        "pose": "Body shakes slightly while staying seated.",
+        "motion": "Small vertical body shake, shoulders trembling.",
+        "expression": "Full dramatic crying face with wide open mouth.",
+        "effects": [
+          "tears start streaming from both eyes"
+        ]
+      },
+      {
+        "time": "1.05s",
+        "pose": "Head tilts slightly left while crying.",
+        "motion": "Head gently swings left; fists remain clenched.",
+        "expression": "Crying continues, mouth open, eyes shut.",
+        "effects": [
+          "larger tear drops fall downward"
+        ]
+      },
+      {
+        "time": "1.35s",
+        "pose": "Head tilts slightly right while crying.",
+        "motion": "Head gently swings right; body trembles softly.",
+        "expression": "Same crying expression, exaggerated and cute.",
+        "effects": [
+          "tears continue dropping"
+        ]
+      },
+      {
+        "time": "1.70s",
+        "pose": "Head returns to center, fists still raised.",
+        "motion": "Motion slows down, crying becomes a smaller shake.",
+        "expression": "Still crying but settling into final pose.",
+        "effects": [
+          "last few tear drops fall"
+        ]
+      },
+      {
+        "time": "2.00s",
+        "pose": "Final crying pose held for feedback display.",
+        "motion": "Stop on a clear readable sticker pose.",
+        "expression": "Big crying mouth, closed eyes, sad brows, visible tears.",
+        "effects": [
+          "soft final bounce"
+        ]
+      }
+    ],
+    "motion_style": {
+      "timing": "fast anticipation, strong reaction, soft ending",
+      "movement_feel": "cute, exaggerated, sticker-like, not realistic",
+      "camera": "static front view",
+      "do_not_change": [
+        "character identity",
+        "outfit",
+        "hair style",
+        "red bracelet",
+        "overall cute 3D cartoon style"
+      ]
+    },
+    "export_recommendations": {
+      "best_for_web": "Lottie JSON if character is separated into layers",
+      "best_for_quick_preview": "GIF",
+      "best_for_high_quality": "MP4 with transparent background if supported",
+      "recommended_duration": "2 seconds",
+      "recommended_loop": "false for wrong-answer feedback, true only if used as loading/retry animation"
     }
   },
-  "pose": {
-    "body_position": "sitting on the floor",
-    "legs": "八字坐姿 / W-sitting pose, legs opened to both sides",
-    "arms": "both arms bent upward with clenched fists",
-    "body_language": "overwhelmed, frustrated, dramatic reaction"
-  },
-  "expression": {
-    "emotion": "崩溃大哭 / crying dramatically",
-    "eyes": "eyes squeezed shut",
-    "mouth": "wide open crying mouth",
-    "eyebrows": "curved upward in sadness",
-    "tears": "large tears streaming down both cheeks"
-  },
-  "usage_context": {
-    "scene_meaning": "答错题目后的伤心搞怪反应",
-    "suggested_use": [
-      "wrong answer feedback",
-      "learning app expression sticker",
-      "quiz reaction animation",
-      "TOUCH English gamified feedback"
-    ]
-  },
-  "background": {
-    "current_background": "black background",
-    "recommended_export": "transparent PNG for app/sticker use"
-  },
-  "prompt_cn": "保持同一个3D卡通小女孩角色，棕色刘海和绑发，穿米白色无袖上衣、粉色百褶裙、米色袜子和浅色运动鞋，右手戴红色手链。让她坐在地上呈八字坐姿，双手握拳举起，眼睛紧闭，眉毛委屈上扬，嘴巴张大崩溃大哭，脸颊有明显泪水，表情夸张搞怪但可爱。适合用于答错题目后的反馈表情，透明背景，干净边缘，3D可爱风格。",
-  "prompt_en": "Keep the same 3D cartoon girl character with brown bangs and tied braided hair, wearing an off-white sleeveless top, pastel pink pleated skirt, beige socks, cream sneakers with pink details, and a red bracelet on her right wrist. Make her sit on the floor in a W-sitting pose with both fists raised, eyes tightly closed, eyebrows lifted sadly, mouth wide open crying dramatically, with visible tears streaming down both cheeks. The expression should be exaggerated, funny, and cute, suitable for a wrong-answer feedback sticker. Transparent background, clean cutout edges, cute 3D style."
+  "ai_video_prompt_cn": "根据参考图，保持同一个3D卡通小女孩角色和服装。制作一个2秒透明背景动画：小女孩坐在地上呈八字坐姿，先身体突然往后一震，然后双手握拳举起，嘴巴张大崩溃大哭，眼睛紧闭，眉毛委屈上扬。眼泪从眼睛喷出并往下掉，身体轻轻颤抖，头轻轻左右摇，最后停在清楚可爱的崩溃大哭姿势。整体动作要夸张、搞怪、可爱，适合答错题目后的学习系统反馈。不要改变角色、发型、衣服、鞋子和红色手链。",
+  "ai_video_prompt_en": "Using the reference image, keep the same cute 3D cartoon girl character and outfit. Create a 2-second transparent-background animation: the girl sits on the floor in a W-sitting pose, suddenly leans backward in shock, clenches both fists, opens her mouth wide and cries dramatically. Her eyes are tightly closed, eyebrows lifted sadly, tears burst out and fall down, her body trembles slightly, and her head gently shakes left and right. End with a clear cute dramatic crying pose. The motion should be exaggerated, funny, and suitable for a wrong-answer feedback animation. Do not change the character, hairstyle, outfit, shoes, or red bracelet."
 }

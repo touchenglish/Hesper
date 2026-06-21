@@ -1,0 +1,50 @@
+{
+  "asset_name": "girl_sitting_crying_wrong_answer",
+  "type": "character_expression",
+  "source_image": "F2F44360-31B6-43C8-BCF9-332B86CE7E12.jpeg",
+  "image_size": {
+    "width": 953,
+    "height": 1036
+  },
+  "character": {
+    "style": "3D cartoon / cute chibi style",
+    "gender": "girl",
+    "hair": "brown hair with bangs and braided bun style",
+    "eyes": "closed tightly while crying",
+    "outfit": {
+      "top": "off-white sleeveless textured top",
+      "skirt": "pastel pink pleated skirt",
+      "socks": "beige socks",
+      "shoes": "cream sneakers with pink details",
+      "accessory": "red bracelet on right wrist"
+    }
+  },
+  "pose": {
+    "body_position": "sitting on the floor",
+    "legs": "八字坐姿 / W-sitting pose, legs opened to both sides",
+    "arms": "both arms bent upward with clenched fists",
+    "body_language": "overwhelmed, frustrated, dramatic reaction"
+  },
+  "expression": {
+    "emotion": "崩溃大哭 / crying dramatically",
+    "eyes": "eyes squeezed shut",
+    "mouth": "wide open crying mouth",
+    "eyebrows": "curved upward in sadness",
+    "tears": "large tears streaming down both cheeks"
+  },
+  "usage_context": {
+    "scene_meaning": "答错题目后的伤心搞怪反应",
+    "suggested_use": [
+      "wrong answer feedback",
+      "learning app expression sticker",
+      "quiz reaction animation",
+      "TOUCH English gamified feedback"
+    ]
+  },
+  "background": {
+    "current_background": "black background",
+    "recommended_export": "transparent PNG for app/sticker use"
+  },
+  "prompt_cn": "保持同一个3D卡通小女孩角色，棕色刘海和绑发，穿米白色无袖上衣、粉色百褶裙、米色袜子和浅色运动鞋，右手戴红色手链。让她坐在地上呈八字坐姿，双手握拳举起，眼睛紧闭，眉毛委屈上扬，嘴巴张大崩溃大哭，脸颊有明显泪水，表情夸张搞怪但可爱。适合用于答错题目后的反馈表情，透明背景，干净边缘，3D可爱风格。",
+  "prompt_en": "Keep the same 3D cartoon girl character with brown bangs and tied braided hair, wearing an off-white sleeveless top, pastel pink pleated skirt, beige socks, cream sneakers with pink details, and a red bracelet on her right wrist. Make her sit on the floor in a W-sitting pose with both fists raised, eyes tightly closed, eyebrows lifted sadly, mouth wide open crying dramatically, with visible tears streaming down both cheeks. The expression should be exaggerated, funny, and cute, suitable for a wrong-answer feedback sticker. Transparent background, clean cutout edges, cute 3D style."
+}

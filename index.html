@@ -5094,7 +5094,1776 @@ const COURSE_SCIENCE = [
  }
 ];
 
-const SUBJECT_COURSES = { bm: COURSE, math: COURSE_MATH, science: COURSE_SCIENCE };
+const COURSE_ENGLISH = [
+ {
+  "id": "set1",
+  "title": {
+   "zh": "单元 1 · Welcome! 与日常",
+   "en": "Unit 1 · Welcome! & Every Day",
+   "ms": "Unit 1 · Welcome! & Setiap Hari"
+  },
+  "lessons": [
+   {
+    "type": "grammar",
+    "draw": 5,
+    "t": {
+     "zh": "能力：can / can't",
+     "en": "Abilities: can / can't",
+     "ms": "Kebolehan: can / can't"
+    },
+    "recap": [
+     {
+      "ic": "💪",
+      "zh": "can ＋ 动词原形 表示「会／能」。例：I can swim.",
+      "en": "can + base verb = ability. e.g. I can swim.",
+      "ms": "can + kata kerja = boleh."
+     },
+     {
+      "ic": "🚫",
+      "zh": "can't ＝ cannot，表示「不会／不能」。例：I can't fly.",
+      "en": "can't = cannot. e.g. I can't fly.",
+      "ms": "can't = tidak boleh."
+     },
+     {
+      "ic": "❓",
+      "zh": "问句 Can you…? 答 Yes, I can. / No, I can't.",
+      "en": "Can you…? → Yes, I can. / No, I can't.",
+      "ms": "Can you…? → Yes/No."
+     }
+    ],
+    "items": [
+     {
+      "kind": "mcq",
+      "id": "e11a",
+      "q": "She ___ swim very well.",
+      "o": [
+       "can",
+       "cans",
+       "canning",
+       "to can"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "can 后面直接加动词原形，不加 s。",
+       "en": "After can, use the base verb (no -s).",
+       "ms": "After can, use the base verb (no -s)."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e11b",
+      "q": "I cannot ride a bike. = I ___ ride a bike.",
+      "o": [
+       "can't",
+       "don't",
+       "not",
+       "no"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "cannot 的缩写是 can't。",
+       "en": "cannot → can't.",
+       "ms": "cannot → can't."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e11c",
+      "q": "___ you play the piano?",
+      "o": [
+       "Can",
+       "Do",
+       "Are",
+       "Is"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "问能力用 Can 开头。",
+       "en": "Use Can for ability questions.",
+       "ms": "Use Can for ability questions."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e11d",
+      "q": "Can a fish fly? — ___",
+      "o": [
+       "No, it can't.",
+       "Yes, it can.",
+       "No, it doesn't.",
+       "Yes, it does."
+      ],
+      "a": 0,
+      "e": {
+       "zh": "用 can 提问就用 can/can't 回答；鱼不会飞。",
+       "en": "Answer can-questions with can/can't.",
+       "ms": "Answer can-questions with can/can't."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e11e",
+      "q": "Birds ___ fly in the sky.",
+      "o": [
+       "can",
+       "can't",
+       "cans",
+       "is"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "鸟会飞，用 can。",
+       "en": "Birds can fly → can.",
+       "ms": "Birds can fly → can."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e11f",
+      "q": "We ___ speak Japanese. We have never learned it.",
+      "o": [
+       "can't",
+       "can",
+       "do",
+       "are"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "没学过＝不会，用 can't。",
+       "en": "Never learned → can't.",
+       "ms": "Never learned → can't."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e11g",
+      "q": "Choose the correct sentence.",
+      "o": [
+       "He can play football.",
+       "He can plays football.",
+       "He cans play football.",
+       "He can to play football."
+      ],
+      "a": 0,
+      "e": {
+       "zh": "can 后面用动词原形，不加 s、不加 to。",
+       "en": "can + base verb only.",
+       "ms": "can + base verb only."
+      }
+     }
+    ]
+   },
+   {
+    "type": "grammar",
+    "draw": 5,
+    "t": {
+     "zh": "拥有：have got / has got",
+     "en": "Possession: have got / has got",
+     "ms": "Memiliki: have got"
+    },
+    "recap": [
+     {
+      "ic": "🎒",
+      "zh": "I/You/We/They → have got；He/She/It → has got。",
+      "en": "I/you/we/they have got; he/she/it has got.",
+      "ms": "have got / has got."
+     },
+     {
+      "ic": "🚫",
+      "zh": "否定：haven't got / hasn't got。",
+      "en": "Negative: haven't / hasn't got.",
+      "ms": "haven't / hasn't got."
+     },
+     {
+      "ic": "❓",
+      "zh": "Have you got…? → Yes, I have. / No, I haven't.",
+      "en": "Have you got…? → Yes, I have./No, I haven't.",
+      "ms": "Have you got…?"
+     }
+    ],
+    "items": [
+     {
+      "kind": "mcq",
+      "id": "e12a",
+      "q": "I ___ a new schoolbag.",
+      "o": [
+       "have got",
+       "has got",
+       "gots",
+       "having"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "I 用 have got。",
+       "en": "I → have got.",
+       "ms": "I → have got."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e12b",
+      "q": "She ___ two cats.",
+      "o": [
+       "has got",
+       "have got",
+       "haves",
+       "got"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "She 是第三人称单数，用 has got。",
+       "en": "She → has got.",
+       "ms": "She → has got."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e12c",
+      "q": "___ you got a pencil?",
+      "o": [
+       "Have",
+       "Has",
+       "Do",
+       "Are"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "you 用 Have 提问。",
+       "en": "you → Have you got…?",
+       "ms": "you → Have you got…?"
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e12d",
+      "q": "Has he got a bike? — ___",
+      "o": [
+       "Yes, he has.",
+       "Yes, he have.",
+       "No, he don't.",
+       "Yes, he is."
+      ],
+      "a": 0,
+      "e": {
+       "zh": "Has…? 用 has 回答。",
+       "en": "Answer Has…? with has.",
+       "ms": "Answer Has…? with has."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e12e",
+      "q": "They ___ got any marbles.",
+      "o": [
+       "haven't",
+       "hasn't",
+       "not",
+       "don't"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "They 的否定用 haven't got。",
+       "en": "They → haven't got.",
+       "ms": "They → haven't got."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e12f",
+      "q": "My sister ___ got long hair.",
+      "o": [
+       "has",
+       "have",
+       "had",
+       "gots"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "My sister＝她，用 has。",
+       "en": "sister (she) → has got.",
+       "ms": "sister (she) → has got."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e12g",
+      "q": "Choose the correct question.",
+      "o": [
+       "Have they got a ball?",
+       "Has they got a ball?",
+       "Have they gots a ball?",
+       "Do they got a ball?"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "they 用 Have…got 提问。",
+       "en": "they → Have they got…?",
+       "ms": "they → Have they got…?"
+      }
+     }
+    ]
+   },
+   {
+    "type": "grammar",
+    "draw": 5,
+    "t": {
+     "zh": "看时间：telling the time",
+     "en": "Telling the Time",
+     "ms": "Memberitahu masa"
+    },
+    "recap": [
+     {
+      "ic": "🕐",
+      "zh": "整点用 o'clock。例：3:00 → three o'clock。",
+      "en": "Whole hour → o'clock. 3:00 = three o'clock.",
+      "ms": "3:00 = three o'clock."
+     },
+     {
+      "ic": "🕑",
+      "zh": "半点用 half past。例：4:30 → half past four。",
+      "en": "X:30 → half past X. 4:30 = half past four.",
+      "ms": "4:30 = half past four."
+     },
+     {
+      "ic": "❓",
+      "zh": "提问：What's the time? / What time is it?",
+      "en": "What's the time?",
+      "ms": "What's the time?"
+     }
+    ],
+    "items": [
+     {
+      "kind": "mcq",
+      "id": "e13a",
+      "q": "The clock shows 3:00. It's three ___.",
+      "o": [
+       "o'clock",
+       "half",
+       "past",
+       "quarter"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "整点用 o'clock。",
+       "en": "Whole hour → o'clock.",
+       "ms": "Whole hour → o'clock."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e13b",
+      "q": "The clock shows 4:30. It's ___ four.",
+      "o": [
+       "half past",
+       "quarter past",
+       "o'clock",
+       "past half"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "4:30 是半点，用 half past。",
+       "en": "4:30 → half past.",
+       "ms": "4:30 → half past."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e13c",
+      "q": "The clock shows 7:00. It's ___.",
+      "o": [
+       "seven o'clock",
+       "half past seven",
+       "seven thirty",
+       "quarter to seven"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "7:00 整点。",
+       "en": "7:00 → seven o'clock.",
+       "ms": "7:00 → seven o'clock."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e13d",
+      "q": "The clock shows 6:30. It's half past ___.",
+      "o": [
+       "six",
+       "seven",
+       "thirty",
+       "half"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "6:30 的钟点是 six。",
+       "en": "6:30 → half past six.",
+       "ms": "6:30 → half past six."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e13e",
+      "q": "The clock shows 9:00. What's the time?",
+      "o": [
+       "It's nine o'clock.",
+       "It's half past nine.",
+       "It's ten o'clock.",
+       "It's nine thirty."
+      ],
+      "a": 0,
+      "e": {
+       "zh": "9:00 整点。",
+       "en": "9:00 → nine o'clock.",
+       "ms": "9:00 → nine o'clock."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e13f",
+      "q": "The clock shows 2:30. It's ___.",
+      "o": [
+       "half past two",
+       "two o'clock",
+       "half past three",
+       "quarter past two"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "2:30 → half past two。",
+       "en": "2:30 → half past two.",
+       "ms": "2:30 → half past two."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e13g",
+      "q": "We have lunch at 12:00. We have lunch at twelve ___.",
+      "o": [
+       "o'clock",
+       "half",
+       "past",
+       "thirty"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "12:00 整点。",
+       "en": "12:00 → o'clock.",
+       "ms": "12:00 → o'clock."
+      }
+     }
+    ]
+   },
+   {
+    "type": "reading",
+    "t": {
+     "zh": "阅读理解：My Friends",
+     "en": "Reading: My Friends",
+     "ms": "Pemahaman: My Friends"
+    },
+    "passage": {
+     "title": {
+      "zh": "My Friends",
+      "en": "My Friends",
+      "ms": "My Friends"
+     },
+     "body": "My name is Aiman. I am nine years old. I have got a big family. I can play badminton and chess. My sister Nadia can sing very well, but she can't swim. We have got a small dog named Bobby. Bobby can run very fast. Every morning, I have got time to play with Bobby before I go to school."
+    },
+    "items": [
+     {
+      "kind": "mcq",
+      "id": "e14a",
+      "q": "How old is Aiman?",
+      "o": [
+       "Nine years old.",
+       "Eight years old.",
+       "Ten years old.",
+       "Seven years old."
+      ],
+      "a": 0,
+      "e": {
+       "zh": "短文说 I am nine years old。",
+       "en": "'I am nine years old.'",
+       "ms": "'I am nine years old.'"
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e14b",
+      "q": "What can Aiman play?",
+      "o": [
+       "Badminton and chess.",
+       "Football and tennis.",
+       "Piano and chess.",
+       "Badminton and swimming."
+      ],
+      "a": 0,
+      "e": {
+       "zh": "I can play badminton and chess。",
+       "en": "He can play badminton and chess.",
+       "ms": "He can play badminton and chess."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e14c",
+      "q": "What CAN'T Nadia do?",
+      "o": [
+       "Swim.",
+       "Sing.",
+       "Run.",
+       "Read."
+      ],
+      "a": 0,
+      "e": {
+       "zh": "she can't swim。",
+       "en": "Nadia can't swim.",
+       "ms": "Nadia can't swim."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e14d",
+      "q": "What is the dog's name?",
+      "o": [
+       "Bobby.",
+       "Nadia.",
+       "Aiman.",
+       "Max."
+      ],
+      "a": 0,
+      "e": {
+       "zh": "a small dog named Bobby。",
+       "en": "The dog is Bobby.",
+       "ms": "The dog is Bobby."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e14e",
+      "q": "What can Bobby do?",
+      "o": [
+       "Run very fast.",
+       "Sing.",
+       "Swim.",
+       "Fly."
+      ],
+      "a": 0,
+      "e": {
+       "zh": "Bobby can run very fast。",
+       "en": "Bobby can run fast.",
+       "ms": "Bobby can run fast."
+      }
+     }
+    ]
+   },
+   {
+    "type": "writing",
+    "boss": true,
+    "t": {
+     "zh": "写作（Boss 挑战）",
+     "en": "Writing (Boss Challenge)",
+     "ms": "Penulisan (Cabaran Boss)"
+    },
+    "items": [
+     {
+      "kind": "write",
+      "id": "e15a",
+      "words": 25,
+      "prompt": {
+       "zh": "{NAME}，用英文写 2–3 句话介绍你自己：你几岁？你会做什么（can）？你有什么（have got）？",
+       "en": "{NAME}, write 2–3 sentences about yourself: How old are you? What can you do? What have you got?",
+       "ms": "{NAME}, tulis 2–3 ayat tentang diri anda."
+      },
+      "model": {
+       "zh": "我的范例：My name is {NAME}. I am nine years old. I can ride a bike and draw. I have got a younger brother and a cat.",
+       "en": "My name is {NAME}. I am nine years old. I can ride a bike and draw. I have got a younger brother and a cat.",
+       "ms": "My name is {NAME}. I am nine years old. I can ride a bike. I have got a cat."
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "set2",
+  "title": {
+   "zh": "单元 2 · Right Now 与一年",
+   "en": "Unit 2 · Right Now & The Year",
+   "ms": "Unit 2 · Right Now & Setahun"
+  },
+  "lessons": [
+   {
+    "type": "grammar",
+    "draw": 5,
+    "t": {
+     "zh": "现在进行时：present continuous",
+     "en": "Present Continuous",
+     "ms": "Present Continuous"
+    },
+    "recap": [
+     {
+      "ic": "🔵",
+      "zh": "am/is/are ＋ 动词-ing，表示「现在正在做」。",
+      "en": "am/is/are + verb-ing = happening now.",
+      "ms": "am/is/are + verb-ing."
+     },
+     {
+      "ic": "🧩",
+      "zh": "I am / He-She-It is / You-We-They are。",
+      "en": "I am / he-she-it is / you-we-they are.",
+      "ms": "I am / is / are."
+     },
+     {
+      "ic": "❓",
+      "zh": "What are you doing? → I am …ing.",
+      "en": "What are you doing? → I am …ing.",
+      "ms": "What are you doing?"
+     }
+    ],
+    "items": [
+     {
+      "kind": "mcq",
+      "id": "e21a",
+      "q": "Look! The baby ___ now.",
+      "o": [
+       "is sleeping",
+       "sleeps",
+       "sleep",
+       "sleeping"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "the baby（it）用 is + sleeping。",
+       "en": "baby → is sleeping.",
+       "ms": "baby → is sleeping."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e21b",
+      "q": "I ___ reading a book now.",
+      "o": [
+       "am",
+       "is",
+       "are",
+       "be"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "I 用 am。",
+       "en": "I → am.",
+       "ms": "I → am."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e21c",
+      "q": "They ___ playing football.",
+      "o": [
+       "are",
+       "is",
+       "am",
+       "be"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "They 用 are。",
+       "en": "they → are.",
+       "ms": "they → are."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e21d",
+      "q": "What ___ you doing?",
+      "o": [
+       "are",
+       "is",
+       "do",
+       "does"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "you 用 are。",
+       "en": "you → are.",
+       "ms": "you → are."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e21e",
+      "q": "She is ___ a song.",
+      "o": [
+       "singing",
+       "sings",
+       "sing",
+       "sang"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "进行时用 -ing：singing。",
+       "en": "sing → singing.",
+       "ms": "sing → singing."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e21f",
+      "q": "Choose the correct sentence.",
+      "o": [
+       "We are watching TV.",
+       "We watching TV.",
+       "We is watching TV.",
+       "We are watch TV."
+      ],
+      "a": 0,
+      "e": {
+       "zh": "are + watching 才完整。",
+       "en": "We are watching TV.",
+       "ms": "We are watching TV."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e21g",
+      "q": "He ___ his homework right now.",
+      "o": [
+       "is doing",
+       "does",
+       "do",
+       "doing"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "He 用 is + doing。",
+       "en": "He → is doing.",
+       "ms": "He → is doing."
+      }
+     }
+    ]
+   },
+   {
+    "type": "grammar",
+    "draw": 5,
+    "t": {
+     "zh": "月份与季节：months & seasons",
+     "en": "Months & Seasons",
+     "ms": "Bulan & Musim"
+    },
+    "recap": [
+     {
+      "ic": "📅",
+      "zh": "一年有 12 个月，从 January 到 December。",
+      "en": "12 months: January–December.",
+      "ms": "12 bulan."
+     },
+     {
+      "ic": "🍂",
+      "zh": "四季：spring, summer, autumn, winter。",
+      "en": "Seasons: spring, summer, autumn, winter.",
+      "ms": "Musim."
+     },
+     {
+      "ic": "📍",
+      "zh": "月份前用 in：in April。",
+      "en": "Use 'in' before months: in April.",
+      "ms": "in + bulan."
+     }
+    ],
+    "items": [
+     {
+      "kind": "mcq",
+      "id": "e22a",
+      "q": "Which month comes after June?",
+      "o": [
+       "July",
+       "May",
+       "August",
+       "January"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "June 之后是 July。",
+       "en": "After June → July.",
+       "ms": "After June → July."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e22b",
+      "q": "There are ___ months in a year.",
+      "o": [
+       "twelve",
+       "ten",
+       "eleven",
+       "twenty"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "一年 12 个月。",
+       "en": "12 months a year.",
+       "ms": "12 months a year."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e22c",
+      "q": "The first month of the year is ___.",
+      "o": [
+       "January",
+       "December",
+       "March",
+       "June"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "第一个月是 January。",
+       "en": "First month → January.",
+       "ms": "First month → January."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e22d",
+      "q": "Which is the LAST month of the year?",
+      "o": [
+       "December",
+       "November",
+       "October",
+       "January"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "最后一个月是 December。",
+       "en": "Last month → December.",
+       "ms": "Last month → December."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e22e",
+      "q": "My birthday is ___ April.",
+      "o": [
+       "in",
+       "on",
+       "at",
+       "to"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "月份前用 in。",
+       "en": "Months take 'in'.",
+       "ms": "Months take 'in'."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e22f",
+      "q": "Which one is a season?",
+      "o": [
+       "Summer",
+       "Monday",
+       "July",
+       "Morning"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "Summer 是季节。",
+       "en": "Summer is a season.",
+       "ms": "Summer is a season."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e22g",
+      "q": "Spring, summer, autumn and ___.",
+      "o": [
+       "winter",
+       "wind",
+       "water",
+       "week"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "第四个季节是 winter。",
+       "en": "…and winter.",
+       "ms": "…and winter."
+      }
+     }
+    ]
+   },
+   {
+    "type": "grammar",
+    "draw": 5,
+    "t": {
+     "zh": "序数词与日期：ordinal numbers",
+     "en": "Ordinal Numbers & Dates",
+     "ms": "Nombor Ordinal"
+    },
+    "recap": [
+     {
+      "ic": "🥇",
+      "zh": "序数词：first(1st), second(2nd), third(3rd)…",
+      "en": "first, second, third, fourth, fifth…",
+      "ms": "first, second, third…"
+     },
+     {
+      "ic": "🔢",
+      "zh": "5th=fifth，注意拼写不是 fiveth。",
+      "en": "5th = fifth (not fiveth).",
+      "ms": "5th = fifth."
+     },
+     {
+      "ic": "📆",
+      "zh": "日期：the 12th of May。",
+      "en": "Dates: the 12th of May.",
+      "ms": "the 12th of May."
+     }
+    ],
+    "items": [
+     {
+      "kind": "mcq",
+      "id": "e23a",
+      "q": "1st = ___",
+      "o": [
+       "first",
+       "one",
+       "once",
+       "oneth"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "1st 读作 first。",
+       "en": "1st → first.",
+       "ms": "1st → first."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e23b",
+      "q": "He came in ___ place. (3rd)",
+      "o": [
+       "third",
+       "three",
+       "thirth",
+       "threeth"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "3rd＝third。",
+       "en": "3rd → third.",
+       "ms": "3rd → third."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e23c",
+      "q": "The ___ day of the week is Monday. (1st)",
+      "o": [
+       "first",
+       "one",
+       "once",
+       "firth"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "第一天＝first。",
+       "en": "1st → first.",
+       "ms": "1st → first."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e23d",
+      "q": "2nd = ___",
+      "o": [
+       "second",
+       "two",
+       "twoth",
+       "twice"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "2nd＝second。",
+       "en": "2nd → second.",
+       "ms": "2nd → second."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e23e",
+      "q": "5th = ___",
+      "o": [
+       "fifth",
+       "five",
+       "fiveth",
+       "fifteenth"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "5th＝fifth。",
+       "en": "5th → fifth.",
+       "ms": "5th → fifth."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e23f",
+      "q": "Today is the ___ of May. (12)",
+      "o": [
+       "twelfth",
+       "twelve",
+       "twelveth",
+       "twentieth"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "12th＝twelfth。",
+       "en": "12th → twelfth.",
+       "ms": "12th → twelfth."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e23g",
+      "q": "Order: first, second, ___, fourth.",
+      "o": [
+       "third",
+       "three",
+       "thirth",
+       "fifth"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "顺序：…third…",
+       "en": "third comes next.",
+       "ms": "third comes next."
+      }
+     }
+    ]
+   },
+   {
+    "type": "reading",
+    "t": {
+     "zh": "阅读理解：Festivals in Malaysia",
+     "en": "Reading: Festivals in Malaysia",
+     "ms": "Pemahaman: Perayaan"
+    },
+    "passage": {
+     "title": {
+      "zh": "Festivals in Malaysia",
+      "en": "Festivals in Malaysia",
+      "ms": "Perayaan di Malaysia"
+     },
+     "body": "In Malaysia, the weather is hot and wet all year. We do not have four seasons. But we celebrate many festivals every year. In January or February, we celebrate Chinese New Year. In May, many people celebrate Wesak Day. Deepavali is in October or November. Children like festivals because they get new clothes and eat nice food."
+    },
+    "items": [
+     {
+      "kind": "mcq",
+      "id": "e24a",
+      "q": "Does Malaysia have four seasons?",
+      "o": [
+       "No, it doesn't.",
+       "Yes, it does.",
+       "Yes, it has four.",
+       "No, it has six."
+      ],
+      "a": 0,
+      "e": {
+       "zh": "短文说 We do not have four seasons。",
+       "en": "Malaysia has no four seasons.",
+       "ms": "Malaysia has no four seasons."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e24b",
+      "q": "When is Chinese New Year?",
+      "o": [
+       "In January or February.",
+       "In May.",
+       "In October.",
+       "In December."
+      ],
+      "a": 0,
+      "e": {
+       "zh": "In January or February。",
+       "en": "Jan or Feb.",
+       "ms": "Jan or Feb."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e24c",
+      "q": "Which festival is in October or November?",
+      "o": [
+       "Deepavali.",
+       "Wesak Day.",
+       "Chinese New Year.",
+       "New Year."
+      ],
+      "a": 0,
+      "e": {
+       "zh": "Deepavali is in October or November。",
+       "en": "Deepavali.",
+       "ms": "Deepavali."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e24d",
+      "q": "Why do children like festivals?",
+      "o": [
+       "They get new clothes and nice food.",
+       "They go to school.",
+       "They sleep early.",
+       "They do homework."
+      ],
+      "a": 0,
+      "e": {
+       "zh": "…get new clothes and eat nice food。",
+       "en": "new clothes & nice food.",
+       "ms": "new clothes & nice food."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e24e",
+      "q": "What is the weather like in Malaysia?",
+      "o": [
+       "Hot and wet.",
+       "Cold and dry.",
+       "Cool and windy.",
+       "Snowy."
+      ],
+      "a": 0,
+      "e": {
+       "zh": "the weather is hot and wet。",
+       "en": "Hot and wet.",
+       "ms": "Hot and wet."
+      }
+     }
+    ]
+   },
+   {
+    "type": "writing",
+    "boss": true,
+    "t": {
+     "zh": "写作（Boss 挑战）",
+     "en": "Writing (Boss Challenge)",
+     "ms": "Penulisan (Cabaran Boss)"
+    },
+    "items": [
+     {
+      "kind": "write",
+      "id": "e25a",
+      "words": 25,
+      "prompt": {
+       "zh": "{NAME}，用英文写 2–3 句话：你最喜欢哪个节日或哪个月份？为什么？",
+       "en": "{NAME}, write 2–3 sentences: Which festival or month do you like best? Why?",
+       "ms": "{NAME}, tulis 2–3 ayat tentang perayaan kegemaran anda."
+      },
+      "model": {
+       "zh": "范例：My favourite festival is Chinese New Year in February. I like it because I get new clothes and play with my cousins.",
+       "en": "My favourite festival is Chinese New Year in February. I like it because I get new clothes and play with my cousins.",
+       "ms": "My favourite festival is Chinese New Year."
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "set3",
+  "title": {
+   "zh": "单元 3 · My House 与 Food",
+   "en": "Unit 3 · My House & Food",
+   "ms": "Unit 3 · Rumah & Makanan"
+  },
+  "lessons": [
+   {
+    "type": "grammar",
+    "draw": 5,
+    "t": {
+     "zh": "There is / There are",
+     "en": "There is / There are",
+     "ms": "There is / There are"
+    },
+    "recap": [
+     {
+      "ic": "1️⃣",
+      "zh": "单数用 There is（There's）。例：There is a sofa.",
+      "en": "Singular → There is. e.g. There is a sofa.",
+      "ms": "There is (tunggal)."
+     },
+     {
+      "ic": "➕",
+      "zh": "复数用 There are。例：There are three rooms.",
+      "en": "Plural → There are. e.g. There are three rooms.",
+      "ms": "There are (jamak)."
+     },
+     {
+      "ic": "❓",
+      "zh": "Is there…? Are there…? 答 Yes, there is/are.",
+      "en": "Is there…? Are there…?",
+      "ms": "Is/Are there…?"
+     }
+    ],
+    "items": [
+     {
+      "kind": "mcq",
+      "id": "e31a",
+      "q": "___ a sofa in the living room.",
+      "o": [
+       "There is",
+       "There are",
+       "It is",
+       "They are"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "a sofa 是单数，用 There is。",
+       "en": "singular → There is.",
+       "ms": "singular → There is."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e31b",
+      "q": "___ three bedrooms in my house.",
+      "o": [
+       "There are",
+       "There is",
+       "It is",
+       "Have"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "three bedrooms 是复数，用 There are。",
+       "en": "plural → There are.",
+       "ms": "plural → There are."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e31c",
+      "q": "Is there a TV in the room? — ___",
+      "o": [
+       "Yes, there is.",
+       "Yes, there are.",
+       "No, there aren't.",
+       "Yes, it has."
+      ],
+      "a": 0,
+      "e": {
+       "zh": "Is there…? 用 there is 回答。",
+       "en": "Is there…? → there is.",
+       "ms": "Is there…? → there is."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e31d",
+      "q": "There ___ two windows in the kitchen.",
+      "o": [
+       "are",
+       "is",
+       "be",
+       "has"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "two windows 复数 → are。",
+       "en": "plural → are.",
+       "ms": "plural → are."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e31e",
+      "q": "There ___ a big garden behind the house.",
+      "o": [
+       "is",
+       "are",
+       "have",
+       "be"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "a garden 单数 → is。",
+       "en": "singular → is.",
+       "ms": "singular → is."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e31f",
+      "q": "Choose the correct sentence.",
+      "o": [
+       "There are four chairs.",
+       "There is four chairs.",
+       "There four chairs.",
+       "There be four chairs."
+      ],
+      "a": 0,
+      "e": {
+       "zh": "four chairs 复数 → There are。",
+       "en": "plural → There are.",
+       "ms": "plural → There are."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e31g",
+      "q": "___ there any books on the table?",
+      "o": [
+       "Are",
+       "Is",
+       "Do",
+       "Has"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "books 复数 → Are there…?",
+       "en": "plural → Are there…?",
+       "ms": "plural → Are there…?"
+      }
+     }
+    ]
+   },
+   {
+    "type": "grammar",
+    "draw": 5,
+    "t": {
+     "zh": "方位介词：prepositions of place",
+     "en": "Prepositions of Place",
+     "ms": "Preposisi Tempat"
+    },
+    "recap": [
+     {
+      "ic": "📦",
+      "zh": "in 在里面、on 在上面、under 在下面。",
+      "en": "in / on / under.",
+      "ms": "in / on / under."
+     },
+     {
+      "ic": "↔️",
+      "zh": "next to 在旁边、between 在两者之间。",
+      "en": "next to / between.",
+      "ms": "next to / between."
+     },
+     {
+      "ic": "🏠",
+      "zh": "behind 在后面、in front of 在前面。",
+      "en": "behind / in front of.",
+      "ms": "behind / in front of."
+     }
+    ],
+    "items": [
+     {
+      "kind": "mcq",
+      "id": "e32a",
+      "q": "The cat is ___ the table. (on top of it)",
+      "o": [
+       "on",
+       "in",
+       "under",
+       "between"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "在上面用 on。",
+       "en": "on top → on.",
+       "ms": "on top → on."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e32b",
+      "q": "The ball is ___ the box. (inside)",
+      "o": [
+       "in",
+       "on",
+       "under",
+       "next"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "在里面用 in。",
+       "en": "inside → in.",
+       "ms": "inside → in."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e32c",
+      "q": "The shoes are ___ the bed. (below)",
+      "o": [
+       "under",
+       "on",
+       "in",
+       "above"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "在下面用 under。",
+       "en": "below → under.",
+       "ms": "below → under."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e32d",
+      "q": "The lamp is ___ to the sofa. (beside)",
+      "o": [
+       "next",
+       "on",
+       "in",
+       "under"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "在旁边用 next to。",
+       "en": "beside → next to.",
+       "ms": "beside → next to."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e32e",
+      "q": "The car is ___ the house. (at the back)",
+      "o": [
+       "behind",
+       "in",
+       "on",
+       "between"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "在后面用 behind。",
+       "en": "at the back → behind.",
+       "ms": "at the back → behind."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e32f",
+      "q": "The picture is ___ the two windows. (in the middle)",
+      "o": [
+       "between",
+       "under",
+       "on",
+       "behind"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "在两者之间用 between。",
+       "en": "in the middle → between.",
+       "ms": "in the middle → between."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e32g",
+      "q": "The boy is standing ___ the door. (forward of it)",
+      "o": [
+       "in front of",
+       "behind",
+       "next of",
+       "on front"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "在前面用 in front of。",
+       "en": "front → in front of.",
+       "ms": "front → in front of."
+      }
+     }
+    ]
+   },
+   {
+    "type": "grammar",
+    "draw": 5,
+    "t": {
+     "zh": "食物与点餐：would like",
+     "en": "Food & 'would like'",
+     "ms": "Makanan & 'would like'"
+    },
+    "recap": [
+     {
+      "ic": "🍽️",
+      "zh": "I would like… ＝ 我想要…（比 I want 更礼貌）。",
+      "en": "I would like… (polite 'want').",
+      "ms": "I would like…"
+     },
+     {
+      "ic": "🥤",
+      "zh": "Would you like…? 邀请，答 Yes, please. / No, thanks.",
+      "en": "Would you like…? → Yes, please./No, thanks.",
+      "ms": "Would you like…?"
+     },
+     {
+      "ic": "🍎",
+      "zh": "元音开头用 an：an apple；其它用 a：a banana。",
+      "en": "an + vowel sound (an apple); a + others.",
+      "ms": "a / an."
+     }
+    ],
+    "items": [
+     {
+      "kind": "mcq",
+      "id": "e33a",
+      "q": "___ you like some juice?",
+      "o": [
+       "Would",
+       "Are",
+       "Do",
+       "Have"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "礼貌邀请用 Would you like…?",
+       "en": "invitation → Would you like…?",
+       "ms": "invitation → Would you like…?"
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e33b",
+      "q": "I would like ___ apple.",
+      "o": [
+       "an",
+       "a",
+       "some",
+       "the"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "apple 元音开头，用 an。",
+       "en": "apple → an.",
+       "ms": "apple → an."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e33c",
+      "q": "Would you like some rice? — ___",
+      "o": [
+       "Yes, please.",
+       "Yes, I am.",
+       "No, I don't.",
+       "Yes, it is."
+      ],
+      "a": 0,
+      "e": {
+       "zh": "礼貌接受用 Yes, please.",
+       "en": "accept → Yes, please.",
+       "ms": "accept → Yes, please."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e33d",
+      "q": "She would ___ a glass of milk.",
+      "o": [
+       "like",
+       "likes",
+       "liked",
+       "liking"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "would 后用原形 like。",
+       "en": "would + like.",
+       "ms": "would + like."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e33e",
+      "q": "Can I have ___ water, please?",
+      "o": [
+       "some",
+       "a",
+       "an",
+       "many"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "water 不可数，用 some。",
+       "en": "uncountable → some.",
+       "ms": "uncountable → some."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e33f",
+      "q": "I would like ___ banana.",
+      "o": [
+       "a",
+       "an",
+       "some",
+       "the"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "banana 辅音开头，用 a。",
+       "en": "banana → a.",
+       "ms": "banana → a."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e33g",
+      "q": "Choose the most polite request.",
+      "o": [
+       "May I have some bread, please?",
+       "Give me bread.",
+       "I want bread now.",
+       "Bread!"
+      ],
+      "a": 0,
+      "e": {
+       "zh": "May I have…, please? 最礼貌。",
+       "en": "Polite → May I have…, please?",
+       "ms": "Polite → May I have…, please?"
+      }
+     }
+    ]
+   },
+   {
+    "type": "reading",
+    "t": {
+     "zh": "阅读理解：My New House",
+     "en": "Reading: My New House",
+     "ms": "Pemahaman: My New House"
+    },
+    "passage": {
+     "title": {
+      "zh": "My New House",
+      "en": "My New House",
+      "ms": "Rumah Baharu Saya"
+     },
+     "body": "We have moved to a new house. It is bigger than our old house. There are three bedrooms and two bathrooms. There is a large kitchen where my mother cooks every day. In the living room, there is a soft sofa and a big television. Behind the house, there is a small garden with many colourful flowers. I like my new house very much."
+    },
+    "items": [
+     {
+      "kind": "mcq",
+      "id": "e34a",
+      "q": "How many bedrooms are there?",
+      "o": [
+       "Three.",
+       "Two.",
+       "Four.",
+       "Five."
+      ],
+      "a": 0,
+      "e": {
+       "zh": "There are three bedrooms。",
+       "en": "Three bedrooms.",
+       "ms": "Three bedrooms."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e34b",
+      "q": "Where does mother cook?",
+      "o": [
+       "In the kitchen.",
+       "In the garden.",
+       "In the bedroom.",
+       "In the living room."
+      ],
+      "a": 0,
+      "e": {
+       "zh": "a large kitchen where my mother cooks。",
+       "en": "In the kitchen.",
+       "ms": "In the kitchen."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e34c",
+      "q": "What is in the living room?",
+      "o": [
+       "A sofa and a television.",
+       "A bed and a desk.",
+       "Flowers.",
+       "A car."
+      ],
+      "a": 0,
+      "e": {
+       "zh": "a soft sofa and a big television。",
+       "en": "Sofa & TV.",
+       "ms": "Sofa & TV."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e34d",
+      "q": "What is behind the house?",
+      "o": [
+       "A small garden.",
+       "A kitchen.",
+       "A car park.",
+       "A school."
+      ],
+      "a": 0,
+      "e": {
+       "zh": "Behind the house, there is a small garden。",
+       "en": "A small garden.",
+       "ms": "A small garden."
+      }
+     },
+     {
+      "kind": "mcq",
+      "id": "e34e",
+      "q": "Is the new house bigger or smaller than the old one?",
+      "o": [
+       "Bigger.",
+       "Smaller.",
+       "The same.",
+       "Older."
+      ],
+      "a": 0,
+      "e": {
+       "zh": "It is bigger than our old house。",
+       "en": "Bigger.",
+       "ms": "Bigger."
+      }
+     }
+    ]
+   },
+   {
+    "type": "writing",
+    "boss": true,
+    "t": {
+     "zh": "写作（Boss 挑战）",
+     "en": "Writing (Boss Challenge)",
+     "ms": "Penulisan (Cabaran Boss)"
+    },
+    "items": [
+     {
+      "kind": "write",
+      "id": "e35a",
+      "words": 25,
+      "prompt": {
+       "zh": "{NAME}，用英文写 2–3 句话介绍你的房间，或你最喜欢的食物。可以用 There is/are。",
+       "en": "{NAME}, write 2–3 sentences about your room or your favourite food. You may use 'There is/are'.",
+       "ms": "{NAME}, tulis 2–3 ayat tentang bilik atau makanan kegemaran anda."
+      },
+      "model": {
+       "zh": "范例：There is a small bed and a desk in my room. There are many books on the desk. My favourite food is fried rice.",
+       "en": "There is a small bed and a desk in my room. There are many books on the desk. My favourite food is fried rice.",
+       "ms": "There is a bed in my room. My favourite food is fried rice."
+      }
+     }
+    ]
+   }
+  ]
+ }
+];
+const SUBJECT_COURSES = { bm: COURSE, math: COURSE_MATH, science: COURSE_SCIENCE, english: COURSE_ENGLISH };
 /* Variant-safety convention: rule-based subjects (Math, Science, BM grammar) may use freely-generated
    variants + same-objective sibling rotation. FACT-based subjects (history, geography, etc.) must be
    marked { factBased:true } below — the engine then NEVER invents new facts or rotates to a different
@@ -5105,7 +6874,9 @@ const SUBJECTS = [
  { id:"math", icon:"🔢", name:{ms:"Matematik", zh:"数学", en:"Math"},
    brand:{ms:"Matematik · Hesper", zh:"数学 · Hesper", en:"Math · Hesper"}, logo:"➗", icons:["🔢","➗","🍰"] },
  { id:"science", icon:"🔬", name:{ms:"Sains", zh:"科学", en:"Science"},
-   brand:{ms:"Sains · Hesper", zh:"科学 · Hesper", en:"Science · Hesper"}, logo:"🔬", icons:["🔬","🧑","🐢"] }
+   brand:{ms:"Sains · Hesper", zh:"科学 · Hesper", en:"Science · Hesper"}, logo:"🔬", icons:["🔬","🧑","🐢"] },
+ { id:"english", icon:"🔤", name:{ms:"Bahasa Inggeris", zh:"英语", en:"English"},
+   brand:{ms:"English · Hesper", zh:"英语 · Hesper", en:"English · Hesper"}, logo:"EN", icons:["🔤","📚","🗣️"] }
 ];
 let SUBJECT = "bm";
 function subjectMeta(id){ return SUBJECTS.find(s=>s.id===id) || SUBJECTS[0]; }
